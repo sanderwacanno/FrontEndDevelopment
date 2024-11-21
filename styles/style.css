@@ -17,6 +17,12 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--font: Roboto, sans-serif, Arial, Helvetica;
+	--nedgame-red: red;
+	--nedgame-green: #00B67A; 
+	--nedgame-blue: #00669B;
+	--border-unhover: #EFEFEF;
+	--border-hover: #666666;
 }
 
 
@@ -29,3 +35,76 @@
 
 /* jouw code */
 
+body {
+	font-family: var(--font);
+	font-size: 12px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+main ul {
+	display: flex;
+	overflow-x: auto;
+	gap: 3em;
+	text-wrap: nowrap;
+}
+
+main section:first-of-type ul li {
+	border: solid 0.5px;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+}
+
+li img{
+	max-width: 130px;
+	max-height: 160px;
+}
+
+li button{
+	width: 30px;
+	height: 30px;
+}
+
+li p {
+	order: -1;
+}
+
+header img:nth-of-type(1) {
+	width: 211px;
+	height: 43px;
+}
+
+main div img:nth-of-type(1) {
+	width: 100%;
+}
+
+#img {
+	width: 162px;
+	height: 162px;
+	background: url(images/mobile-menu.webp) -490px -326px;
+}
+
+header section:nth-of-type(3) {
+	display: flex;
+	overflow-x: auto;
+	gap: 3em;
+}
+
+header section:nth-of-type(3) a {
+	border: solid 0.5px; 
+	padding: 0.5em 1em 0.5em 1em;
+	border-radius: 25px;
+	text-wrap: nowrap;
+	color: var(--nedgame-blue);
+}
+
+header > p {
+	font-size: 12px;
+	text-align: center;
+}
