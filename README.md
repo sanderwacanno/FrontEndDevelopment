@@ -104,10 +104,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Sander      | Esmee         | Tom    | Xavannah        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Images en Image Sprites  | Menu's, footer's             | Navigatie, contentfoto's    | en dan ik dat    |
+  | Het weghalen van content gebasseerd op schermgrootte | Videos | Animatie/gif | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
