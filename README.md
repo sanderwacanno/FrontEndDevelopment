@@ -56,11 +56,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
-  <img src="readme-images/WCAG1.png" width="375px" alt="WCAG formulier, pagina 1">
-  <img src="readme-images/WCAG2.png" width="375px" alt="WCAG formulier, pagina 2">
-  <img src="readme-images/WCAG3.png" width="375px" alt="WCAG formulier, pagina 3">
-  <img src="readme-images/WCAG4.png" width="375px" alt="WCAG formulier, pagina 4">
-  <img src="readme-images/WCAG5.png" width="375px" alt="WCAG formulier, pagina 5">
+  <img src="readme-images/WCAG1.jpg" width="375px" alt="WCAG formulier, pagina 1">
+  <img src="readme-images/WCAG2.jpg" width="375px" alt="WCAG formulier, pagina 2">
+  <img src="readme-images/WCAG3.jpg" width="375px" alt="WCAG formulier, pagina 3">
+  <img src="readme-images/WCAG4.jpg" width="375px" alt="WCAG formulier, pagina 4">
+  <img src="readme-images/WCAG5.jpg" width="375px" alt="WCAG formulier, pagina 5">
   
 
   ### Bevindingen
