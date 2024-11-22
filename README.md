@@ -56,8 +56,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
+  <img src="readme-images/WCAG1.png" width="375px" alt="WCAG formulier, pagina 1">
+  <img src="readme-images/WCAG2.png" width="375px" alt="WCAG formulier, pagina 2">
+  <img src="readme-images/WCAG3.png" width="375px" alt="WCAG formulier, pagina 3">
+  <img src="readme-images/WCAG4.png" width="375px" alt="WCAG formulier, pagina 4">
+  <img src="readme-images/WCAG5.png" width="375px" alt="WCAG formulier, pagina 5">
+  
+
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Site code lijkt wel redelijk te kloppen, maar het gebruikt veel div'jes (tot het punt waar het een beetje slordig lijkt) waar mogelijk inplaats sections hadden kunnen gebruikt worden.
+  - Je kan niet door de site heen met keyboard, omdat de selectie kader onzichtbaar is.
 
 </details>
 
