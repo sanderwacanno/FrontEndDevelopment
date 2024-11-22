@@ -106,9 +106,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Sander      | Esmee         | Tom    | Xavannah        |
   | ---            | ---                | ---          | ---              |
-  | Images en Image Sprites  | Menu's, footer's             | Navigatie, contentfoto's    | en dan ik dat    |
-  | Het weghalen van content gebasseerd op schermgrootte | Videos | Animatie/gif | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Images        | Menu's             | Navigatie    | en dan ik dat    |
+  | Image Sprites | footer's | contentfoto's  | dit wil ik zeker |
+  | Het weghalen van content gebasseerd op schermgrootte            | Videos               | Animatie/gif          | ...              |
 
 
   ### Verslag van meeting
