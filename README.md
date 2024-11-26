@@ -114,10 +114,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+ - Twee puntjes voor elke image ../images
+
+- Geef buttons aria-label
+
+- prijs in < p >
+
+- zet plaatje en naam in < a > 
+
+- href="#" voor loze links
+
+- Twee verschillende navbars
+
 
 </details>
 

@@ -37,3 +37,136 @@ ul {
 li {
 	text-decoration: none;
 }
+
+header section:nth-of-type(3) {
+	display: flex;
+	overflow-x: auto;
+	gap: 3em;
+}
+
+header section:nth-of-type(3) a {
+	border: solid 0.5px; 
+	padding: 0.5em 1em 0.5em 1em;
+	border-radius: 25px;
+	text-wrap: nowrap;
+	color: var(--nedgame-blue);
+}
+
+
+header section:nth-of-type(4) a {
+	padding: 0.5em 1em 0.5em 1em;
+	/* border-radius: 25px; */
+	text-wrap: nowrap;
+	background-color: var(--nedgame-blue);
+	color: white;
+}
+
+.bannerimage {
+	display: none;
+	visibility: hidden;
+}
+
+.minbar{
+	display: none;
+	visibility: hidden;
+}
+
+.maxbar{
+	display: none;
+	visibility: hidden;
+}
+
+header > ul {
+	display: none;
+	visibility: hidden;
+	justify-content: space-evenly;
+}
+
+header > ul > li {
+	display: block;
+	text-wrap: nowrap;
+}
+
+header > p {
+	display: none;
+	visibility: hidden;
+}
+
+div > img:not(:first-child) {
+	display: none;
+	visibility: hidden;
+}
+
+div {
+	/* width: 100%; */
+	display: flex;
+	overflow-y: auto;
+}
+
+div:nth-child(2) img {
+	width: 100%/3;
+	height: auto;
+}
+
+h3 {
+	display: none;
+	visibility: hidden;
+}
+
+body {
+	background-image: none;
+}
+
+header {
+	background-color: white;
+}
+
+main {
+	background-color: white;
+	/* width: 100%; */
+}
+
+footer {
+	background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+	.minbar {display: block; visibility: visible;}
+	header > p {display: block; visibility: visible;}
+}
+
+@media only screen and (min-width: 1025px) {
+	.maxbar {display: block; visibility: visible;}
+	.bannerimage {display: block; visibility: visible;}
+	header > ul {display: flex; visibility: visible;}
+	div > img:not(:first-child) {display: flex; visibility: visible;}
+	h3 {display: block; visibility: visible;}
+	header {width: 1500px;}
+	main {width: 1500px;}
+	footer {width: 1500px;}
+	body {background-image: url(../images/background.png);}
+}
+
+main section:not(:first-of-type) ul li {
+	border: solid 0.5px;
+	border-radius: 5px;
+	padding: 0.5em 1em 0.5em 1em;
+	border-color: var(--border-unhover);
+	width: 142px;
+	text-align: center;
+}
+
+main section:not(:first-of-type) ul li a {
+	color: var(--nedgame-blue);
+	font-weight: bold;
+	order: 0;
+}
+
+main section:not(:first-of-type) ul li p {
+	color: black;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+
+	/* display: grid; */
