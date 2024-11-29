@@ -16,7 +16,6 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
 }
 
 
@@ -38,13 +37,13 @@ li {
 	text-decoration: none;
 }
 
-header section:nth-of-type(3) {
+header section:nth-of-type(4) {
 	display: flex;
 	overflow-x: auto;
 	gap: 3em;
 }
 
-header section:nth-of-type(3) a {
+header section:nth-of-type(4) a {
 	border: solid 0.5px; 
 	padding: 0.5em 1em 0.5em 1em;
 	border-radius: 25px;
@@ -53,12 +52,12 @@ header section:nth-of-type(3) a {
 }
 
 
-header section:nth-of-type(4) {
+header section:nth-of-type(5) {
 	padding: 0.5em 1em 0.5em 1em;
 	background-color: var(--nedgame-blue);
 }
 
-header section:nth-of-type(4) a {
+header section:nth-of-type(5) a {
 	padding: 0.5em 1em 0.5em 1em;
 	/* border-radius: 25px; */
 	text-wrap: nowrap;
@@ -67,7 +66,7 @@ header section:nth-of-type(4) a {
 	font-weight: bold;
 }
 
-header section:nth-of-type(4) a:hover {
+header section:nth-of-type(5) a:hover {
 	background-color: white;
 	color: var(--nedgame-blue);
 }
@@ -75,13 +74,17 @@ header section:nth-of-type(4) a:hover {
 .bannerimage {
 	display: none;
 	visibility: hidden;
+	width: 80%; 
+	height: auto;
 }
 
+/* Bar die laat zien bij een klein scherm */
 .minbar{
 	display: none;
 	visibility: hidden;
 }
 
+/* Bar die laat zien bij een groot scherm */
 .maxbar{
 	display: none;
 	visibility: hidden;
@@ -129,16 +132,25 @@ body {
 }
 
 header {
-	background-color: white;
+	background-color: var(--color-background);
 }
 
 main {
-	background-color: white;
+	background-color: var(--color-background);
 	/* width: 100%; */
 }
 
 footer {
-	background-color: white;
+	background-color: var(--color-background);
+}
+
+header {
+	position: block;
+}
+
+footer > img:nth-child(1){
+	position: none;
+	visibility: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -148,7 +160,7 @@ footer {
 
 @media only screen and (min-width: 1025px) {
 	.maxbar {display: block; visibility: visible;}
-	.bannerimage {display: block; visibility: visible;}
+	.bannerimage {display: block; visibility: visible; width: 80%; height: auto}
 	header > ul {display: flex; visibility: visible;}
 	div > img:not(:first-child) {display: flex; visibility: visible;}
 	h3 {display: block; visibility: visible;}
@@ -156,6 +168,7 @@ footer {
 	main {width: 1500px;}
 	footer {width: 1500px;}
 	body {background-image: url(../images/background.png);}
+	header {position: sticky; top: -8em;}
 }
 
 

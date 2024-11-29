@@ -16,16 +16,22 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-background:#ffffff;
 	--font: Roboto, sans-serif, Arial, Helvetica;
 	--nedgame-red: red;
 	--nedgame-green: #00B67A; 
 	--nedgame-blue: #00669B;
 	--border-unhover: #EFEFEF;
 	--border-hover: #666666;
+	--color-text:#111;
+	--color-background:#ffffff;
 }
 
-
+@media (prefers-colors-scheme:dark){
+	:root{
+		--color-background: #151515;
+	}
+}
 
 
 
@@ -81,14 +87,17 @@ li button{
 	order: -1;
 } */
 
+header {
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+}
+
 header img:nth-of-type(1) {
 	width: 211px;
 	height: 43px;
 }
 
-main div img {
-	/* width: 100%; */
-}
 
 /* #img {
 	width: 162px;
@@ -102,7 +111,68 @@ header > p {
 	text-align: center;
 }
 
+header section:nth-of-type(3) button {
+	font-size: 0.75em;
+}
+
 span {
 	color: var(--nedgame-green);
 	font-weight: bold;
+}
+
+@media only screen and (min-width: 1025px) {
+	header {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+}
+
+
+svg {
+	height: 2em;
+	width: auto;
+	color:#00B67A; 
+}
+
+svg:hover {
+	color: var(--nedgame-blue);
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	color: var(--nedgame-blue);
+}
+
+#menu {
+	position: fixed;
+	inset: 0;
+	translate:-100%;
+	transition: 0.3s;
+}
+
+#menu.toonMenu {
+	translate:0%;
+}
+
+#openButton {
+	position: none;
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+	#openButton {position: block; visibility: visible;}
+}
+
+header > ul > li > svg {
+	height: 1em;
+	width: auto;
+}
+
+nav {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: sticky;
+	top: 0em;
 }

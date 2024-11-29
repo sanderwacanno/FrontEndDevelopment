@@ -145,18 +145,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Sander     | Esmee          | Tom    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | SVG's  | Slider positite          | SVGs    | en dan ik dat    |
+  | Grids | Videos / form | nog een punt | dit wil ik zeker |
+  | ...            | Eerste slider               | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - punt 1
-  - punt 2
+  - punt 22
   - nog een punt
 - ...
 
@@ -248,6 +248,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. bron 1
+  https://www.w3schools.com/css/css3_shadows_box.asp
   2. bron 2
   3. ...
 
