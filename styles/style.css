@@ -254,10 +254,39 @@ footer > ul > li {
 	display: inline-block;
 }
 
+footer > p {
+	text-align: center;
+}
+
 /* li p {
 	order: -1;
 } */
 
+footer > img {
+	display: none;
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 1024px){
+	footer > img{ 
+		display: block;
+		visibility: visible;
+		width: 90vw;
+		height: auto;
+	}
+}
+
+footer > section {
+	display: none;
+	visibility: hidden;
+}
+
+@media only screen and (min-width: 1025px){
+	footer > section {
+		display: block;
+		visibility: visible;
+	}
+}
 
 #menu {
 	position: fixed;
@@ -271,17 +300,17 @@ footer > ul > li {
 }
 
 #openButton {
-	position: none;
+	display: none;
 	visibility: hidden;
 }
 
 #mobileLogo {
-	position: none;
+	display: none;
 	visibility: hidden;
 }
 
 #mobileSection{
-	position: none;
+	display: none;
 	visibility: hidden;
 }
 
@@ -295,17 +324,17 @@ nav:first-of-type {
 }
 
 @media only screen and (max-width: 1024px) {
-	#openButton {position: block; visibility: visible;}
+	#openButton {display: block; visibility: visible;}
 	nav:first-of-type {position: sticky; visibility: visible;}
 	#mobileLogo {
-		position: relative;
+		display: block;
 		visibility: visible;
 		width: 211px;
 		height: 43px;
 	}
 	#mobileSection{
-		position: none;
-		visibility: hidden;
+		display: block;
+		visibility: visible;
 	}
 }
 
