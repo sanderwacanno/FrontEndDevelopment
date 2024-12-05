@@ -173,6 +173,70 @@ main section:nth-of-type(3) section:first-of-type{
 	padding: 23.35px;
 	h2 {
 		flex-grow: 5;
+		font-weight: 700;
+	}
+	h3 {
+		margin-right: 0.5em;
+	}
+}
+
+/* Games 2 */
+main section:nth-of-type(4) ul{
+	display: flex;
+	overflow-x: auto;
+}
+
+main section:nth-of-type(4) section:first-of-type{
+	display: flex;
+	clear: both;
+	width: 100%;
+	align-items: baseline;
+	padding: 23.35px;
+	h2 {
+		flex-grow: 5;
+		font-weight: 700;
+	}
+	h3 {
+		margin-right: 0.5em;
+	}
+}
+
+/* Games 3 */
+main section:nth-of-type(5) ul{
+	display: flex;
+	overflow-x: auto;
+}
+
+main section:nth-of-type(5) section:first-of-type{
+	display: flex;
+	clear: both;
+	width: 100%;
+	align-items: baseline;
+	padding: 23.35px;
+	h2 {
+		flex-grow: 5;
+		font-weight: 700;
+	}
+	h3 {
+		margin-right: 0.5em;
+	}
+}
+
+/* Games 4 */
+main section:nth-of-type(6) ul{
+	display: flex;
+	overflow-x: auto;
+}
+
+main section:nth-of-type(6) section:first-of-type{
+	display: flex;
+	clear: both;
+	width: 100%;
+	align-items: baseline;
+	padding: 23.35px;
+	h2 {
+		flex-grow: 5;
+		font-weight: 700;
 	}
 	h3 {
 		margin-right: 0.5em;
@@ -184,11 +248,36 @@ main section:nth-of-type(3) section:first-of-type{
 		display: grid;
 		grid-template-columns: repeat(6,1fr);
 		gap: 1em;
+		column-gap: .5em;
+		row-gap: .5em;
 	}
 	main section:nth-of-type(3) ul{
 		display: grid;
 		grid-template-columns: repeat(7,1fr);
 		gap: 1em;
+		column-gap: .5em;
+		row-gap: .5em;
+	}
+	main section:nth-of-type(4) ul{
+		display: grid;
+		grid-template-columns: repeat(7,1fr);
+		gap: 1em;
+		column-gap: .5em;
+		row-gap: .5em;
+	}
+	main section:nth-of-type(5) ul{
+		display: grid;
+		grid-template-columns: repeat(7,1fr);
+		gap: 1em;
+		column-gap: .5em;
+		row-gap: .5em;
+	}
+	main section:nth-of-type(6) ul{
+		display: grid;
+		grid-template-columns: repeat(7,1fr);
+		gap: 1em;
+		column-gap: .5em;
+		row-gap: .5em;
 	}
 }
 

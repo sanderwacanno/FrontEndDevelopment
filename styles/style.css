@@ -42,13 +42,24 @@
 
 /* jouw code */
 
+/* *{
+	margin: 0;
+	padding: 0;
+} */
+
 body {
 	font-family: var(--font);
 	font-size: 12px;
+	line-height: 1.5em;
 }
 
 body {
 	background-image: none;
+}
+
+body a {
+	text-wrap:wrap;
+	text-decoration: none;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -67,6 +78,11 @@ main {
 
 footer {
 	background-color: var(--color-background);
+}
+
+
+h2, h3 {
+	font-size: 1.25em;
 }
 
 ul {
@@ -139,7 +155,7 @@ header > ul > li > svg {
 header section:nth-of-type(3) {
 	display: flex;
 	overflow-x: auto;
-	gap: 3em;
+	gap: 0em;
 }
 
 header section:nth-of-type(3) a {
@@ -254,6 +270,16 @@ li button{
 	visibility: hidden;
 }
 
+#mobileLogo {
+	position: none;
+	visibility: hidden;
+}
+
+#mobileSection{
+	position: none;
+	visibility: hidden;
+}
+
 nav:first-of-type {
 	width: 100%;
 	height: 100%;
@@ -266,6 +292,14 @@ nav:first-of-type {
 @media only screen and (max-width: 1024px) {
 	#openButton {position: block; visibility: visible;}
 	nav:first-of-type {position: sticky; visibility: visible;}
+	#mobileLogo {
+		position: relative;
+		visibility: visible;
+	}
+	#mobileSection{
+		position: none;
+		visibility: hidden;
+	}
 }
 
 #topstuff {
