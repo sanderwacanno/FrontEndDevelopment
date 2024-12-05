@@ -68,6 +68,10 @@ div	img:not(:first-of-type) {
 		display: block;
 		visibility: visible;
 	}
+	/* div img:first-child{
+		width: 100%;
+		height: auto;
+	} */
 }
 
 /* div:nth-child(2) img {
@@ -95,16 +99,20 @@ main ul {
 main section:first-of-type ul li {
 	border: solid 0.5px;
 	padding: 0.5em 1em 0.5em 1em;
-	border-color: var(--border-unhover)
+	border-color: var(--border-unhover);
+	a {
+		text-wrap: nowrap;
+		color: var(--color-text);
+	}
 }
 
 main section:first-of-type ul li:hover {
-	border-color: var(--border-hover)
+	border-color: var(--border-hover);
 }
 
 
 header {
-	position: block;
+	display: block;
 }
 
 @media only screen and (max-width: 1024px) {

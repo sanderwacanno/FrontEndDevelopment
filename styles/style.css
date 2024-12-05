@@ -249,6 +249,11 @@ li button{
 	height: 30px;
 }
 
+footer > ul > li {
+	width: 45%;
+	display: inline-block;
+}
+
 /* li p {
 	order: -1;
 } */
@@ -295,6 +300,8 @@ nav:first-of-type {
 	#mobileLogo {
 		position: relative;
 		visibility: visible;
+		width: 211px;
+		height: 43px;
 	}
 	#mobileSection{
 		position: none;
