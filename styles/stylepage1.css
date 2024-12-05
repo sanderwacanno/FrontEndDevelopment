@@ -29,46 +29,10 @@
 /* jouw code */
 
 
-ul {
-	text-decoration: none;
-}
-
-li {
-	text-decoration: none;
-}
-
-header section:nth-of-type(4) {
-	display: flex;
-	overflow-x: auto;
-	gap: 3em;
-}
-
-header section:nth-of-type(4) a {
-	border: solid 0.5px; 
-	padding: 0.5em 1em 0.5em 1em;
-	border-radius: 25px;
-	text-wrap: nowrap;
-	color: var(--nedgame-blue);
-}
-
-
-header section:nth-of-type(5) {
-	padding: 0.5em 1em 0.5em 1em;
-	background-color: var(--nedgame-blue);
-}
-
-header section:nth-of-type(5) a {
-	padding: 0.5em 1em 0.5em 1em;
-	/* border-radius: 25px; */
-	text-wrap: nowrap;
-	background-color: var(--nedgame-blue);
-	color: white;
-	font-weight: bold;
-}
-
-header section:nth-of-type(5) a:hover {
-	background-color: white;
-	color: var(--nedgame-blue);
+h1 {
+	/* position: none; */
+	margin: 0;
+	padding: 0;
 }
 
 .bannerimage {
@@ -78,79 +42,69 @@ header section:nth-of-type(5) a:hover {
 	height: auto;
 }
 
-/* Bar die laat zien bij een klein scherm */
-.minbar{
-	display: none;
-	visibility: hidden;
-}
-
-/* Bar die laat zien bij een groot scherm */
-.maxbar{
-	display: none;
-	visibility: hidden;
-}
-
 header > ul {
 	display: none;
 	visibility: hidden;
 	justify-content: space-evenly;
 }
 
-header > ul > li {
-	display: block;
-	text-wrap: nowrap;
-}
-
-header > p {
-	display: none;
-	visibility: hidden;
-}
-
-div > img:not(:first-child) {
-	display: none;
-	visibility: hidden;
-}
-
 div {
-	/* width: 100%; */
-	display: flex;
-	overflow-y: auto;
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
 }
 
-div:nth-child(2) img {
-	width: 100%/3;
+div img {
+	width: 45vw;
 	height: auto;
 }
 
-h3 {
+div	img:not(:first-of-type) {
 	display: none;
 	visibility: hidden;
 }
+
+@media only screen and (min-width: 737px) {
+	div	img:not(:first-of-type){
+		display: block;
+		visibility: visible;
+	}
+}
+
+/* div:nth-child(2) img {
+	width: 100%/3;
+	height: auto;
+} */
 
 body {
 	background-image: none;
 }
 
-header {
-	background-color: var(--color-background);
+@media only screen and (min-width: 1025px) {
+	body {background-image: url(../images/background.png);}
 }
 
-main {
-	background-color: var(--color-background);
-	/* width: 100%; */
+/* MAIN */
+main ul {
+	display: flex;
+	overflow-x: auto;
+	gap: 3em;
+	text-wrap: nowrap;
 }
 
-footer {
-	background-color: var(--color-background);
+	
+main section:first-of-type ul li {
+	border: solid 0.5px;
+	padding: 0.5em 1em 0.5em 1em;
+	border-color: var(--border-unhover)
 }
+
+main section:first-of-type ul li:hover {
+	border-color: var(--border-hover)
+}
+
 
 header {
 	position: block;
-}
-
-footer > img:nth-child(1){
-	position: none;
-	visibility: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -162,12 +116,10 @@ footer > img:nth-child(1){
 	.maxbar {display: block; visibility: visible;}
 	.bannerimage {display: block; visibility: visible; width: 80%; height: auto}
 	header > ul {display: flex; visibility: visible;}
-	div > img:not(:first-child) {display: flex; visibility: visible;}
-	h3 {display: block; visibility: visible;}
+	/* div > img:not(:first-child) {display: flex; visibility: visible;} */
 	header {width: 1500px;}
 	main {width: 1500px;}
 	footer {width: 1500px;}
-	body {background-image: url(../images/background.png);}
 	header {position: sticky; top: -8em;}
 }
 
@@ -193,5 +145,60 @@ main section:not(:first-of-type) ul li p {
 	font-size: 16px;
 }
 
+/* Categorien */
+main section:nth-of-type(2) ul{
+	display: flex;
+	overflow-x: auto;
+}
+
+main section:nth-of-type(2) ul li{
+	flex-direction: column-reverse;
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+/* Games 1 */
+main section:nth-of-type(3) ul{
+	display: flex;
+	overflow-x: auto;
+}
+
+main section:nth-of-type(3) section:first-of-type{
+	display: flex;
+	clear: both;
+	width: 100%;
+	align-items: baseline;
+	padding: 23.35px;
+	h2 {
+		flex-grow: 5;
+	}
+	h3 {
+		margin-right: 0.5em;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	main section:nth-of-type(2) ul{
+		display: grid;
+		grid-template-columns: repeat(6,1fr);
+		gap: 1em;
+	}
+	main section:nth-of-type(3) ul{
+		display: grid;
+		grid-template-columns: repeat(7,1fr);
+		gap: 1em;
+	}
+}
 
 	/* display: grid; */
+
+h3 {
+	display: none;
+	visibility: hidden;
+}
+	
+@media only screen and (min-width: 1025px) {
+	h3 {display: block; visibility: visible;}
+}

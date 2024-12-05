@@ -39,6 +39,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De site die ik ga namaken voor deze opdracht is de site van Nedgame, een Nederlandse video game en merchandise verkoper. Ik bezoek de webshop vaak om te kijken wat ze aan het verkopen zijn.
   https://www.nedgame.nl/
 
+  Link naar de Github live page:
+  https://sanderwacanno.github.io/FrontEndDevelopment/
+
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina
   <img src="readme-images/page1.png" width="375px" alt="De home pagina van Nedgame.nl">
