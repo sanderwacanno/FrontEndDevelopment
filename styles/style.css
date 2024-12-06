@@ -128,7 +128,7 @@ header {
 	margin: 0;
 }
 
-header img:nth-of-type(1) {
+header section:nth-of-type(1) img {
 	width: 211px;
 	height: 43px;
 }
@@ -212,6 +212,13 @@ header {
 	visibility: hidden;
 }
 
+.bannerimage {
+	display: none;
+	visibility: hidden;
+	width: 80%; 
+	height: auto;
+}
+
 @media only screen and (max-width: 1024px) {
 	.minbar {display: block; visibility: visible;}
 	header > p {display: block; visibility: visible;}
@@ -219,7 +226,14 @@ header {
 
 @media only screen and (min-width: 1025px) {
 	.maxbar {display: block; visibility: visible;}
-	.bannerimage {display: block; visibility: visible; width: 80%; height: auto}
+	.bannerimage {
+		display: flex; 
+		visibility: visible; 
+		max-width: 100%;
+		height: auto; 
+		background-color: none; 
+		justify-content: center;
+	}
 	header > ul {display: flex; visibility: visible;}
 	header {width: 1500px;}
 	footer {width: 1500px;}
