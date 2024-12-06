@@ -91,7 +91,7 @@ body {
 main ul {
 	display: flex;
 	overflow-x: auto;
-	gap: 3em;
+	gap: 0.5em;
 	text-wrap: nowrap;
 }
 
