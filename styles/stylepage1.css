@@ -35,13 +35,6 @@ h1 {
 	padding: 0;
 }
 
-
-header > ul {
-	display: none;
-	visibility: hidden;
-	justify-content: space-evenly;
-}
-
 div {
 	display: grid;
 	grid-template-columns: repeat(6,1fr);
@@ -83,6 +76,11 @@ body {
 }
 
 /* MAIN */
+main {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
 main ul {
 	display: flex;
 	overflow-x: auto;
@@ -103,26 +101,6 @@ main section:first-of-type ul li {
 
 main section:first-of-type ul li:hover {
 	border-color: var(--border-hover);
-}
-
-
-header {
-	display: block;
-}
-
-@media only screen and (max-width: 1024px) {
-	.minbar {display: block; visibility: visible;}
-	header > p {display: block; visibility: visible;}
-}
-
-@media only screen and (min-width: 1025px) {
-	.maxbar {display: block; visibility: visible;}
-	header > ul {display: flex; visibility: visible;}
-	/* div > img:not(:first-child) {display: flex; visibility: visible;} */
-	header {width: 1500px;}
-	main {width: 1500px;}
-	footer {width: 1500px;}
-	header {position: sticky; top: -8em;}
 }
 
 
@@ -299,4 +277,12 @@ h3 {
 	
 @media only screen and (min-width: 1025px) {
 	h3 {display: block; visibility: visible;}
+}
+
+main section ul a {
+	outline: none;
+}
+
+main section ul a:focus {
+	outline: 2px dashed var(--nedgame-red);
 }
