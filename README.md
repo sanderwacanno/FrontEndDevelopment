@@ -206,10 +206,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Zet header in section en alleen een achtergrond daar.
+  - Kijk naar 'width max content, breedte van columns' om de ruimte tussen de columns te veranderen
+  - Kijk naar  'margin op de body. Text align center' om de site te centreren bij uitzoomen
 
 </details>
 
@@ -253,7 +252,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. bron 1
   https://www.w3schools.com/css/css3_shadows_box.asp
-  2. bron 2
-  3. ...
+  2. bron 2 
+  https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend
+  3. bron 3 (SVGs)
+  https://fontawesome.com/
+  4. bron 4
+  https://www.w3schools.com/tags/tag_select.asp
+  5. bron 5 (Hamburger menu)
+  Sanne's hamburger menu opdracht
 
 </details>

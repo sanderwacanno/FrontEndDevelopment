@@ -36,13 +36,17 @@ h1 {
 }
 
 div {
-	display: grid;
-	grid-template-columns: repeat(6,1fr);
+	/* display: grid;
+	grid-template-columns: repeat(2,1fr); */
+	width: 100vw; 
+	display: flex;
+	align-items: center;
 }
 
 div img {
 	width: 45vw;
 	height: auto;
+	overflow: hidden;
 }
 
 div	img:not(:first-of-type) {
@@ -51,16 +55,24 @@ div	img:not(:first-of-type) {
 }
 
 @media only screen and (min-width: 737px) {
+	div img:first-of-type{
+		width: 45vw;
+		height: auto;
+	}
 	div	img:not(:first-of-type){
 		display: block;
 		visibility: visible;
 		width: 45vw;
 	}
-	/* div img:first-of-type{
-		width: 100vw;
-		height: auto;
-	} */
 }
+
+@media only screen and (max-width: 736px) {
+	div img:first-of-type{
+		width: 80vw;
+		height: auto;
+	}
+}
+
 
 /* div:nth-child(2) img {
 	width: 100%/3;
@@ -119,6 +131,11 @@ main section:not(:first-of-type) ul li a {
 	order: 0;
 }
 
+main section:not(:first-of-type):not(:nth-of-type(2)) ul li a:first-of-type {
+	height: 3em;
+	overflow: hidden;
+}
+
 main section:not(:first-of-type) ul li p {
 	color: black;
 	font-weight: 700;
@@ -142,6 +159,10 @@ main section:nth-of-type(2) ul li{
 main section:nth-of-type(3) ul{
 	display: flex;
 	overflow-x: auto;
+}
+
+main section:nth-of-type(3) ul li{
+	display: inline-block;
 }
 
 main section:nth-of-type(3) section:first-of-type{
@@ -173,6 +194,10 @@ main section:nth-of-type(4) ul{
 	overflow-x: auto;
 }
 
+main section:nth-of-type(4) ul li{
+	display: inline-block;
+}
+
 main section:nth-of-type(4) section:first-of-type{
 	display: flex;
 	clear: both;
@@ -194,6 +219,10 @@ main section:nth-of-type(5) ul{
 	overflow-x: auto;
 }
 
+main section:nth-of-type(5) ul li{
+	display: inline-block;
+}
+
 main section:nth-of-type(5) section:first-of-type{
 	display: flex;
 	clear: both;
@@ -213,6 +242,10 @@ main section:nth-of-type(5) section:first-of-type{
 main section:nth-of-type(6) ul{
 	display: flex;
 	overflow-x: auto;
+}
+
+main section:nth-of-type(6) ul li{
+	display: inline-block;
 }
 
 main section:nth-of-type(6) section:first-of-type{
