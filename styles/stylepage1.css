@@ -16,6 +16,8 @@
 :root {
 	/* startje */
 	--color-text:#111;
+	--scrollbar: #ffffff;
+	--scrollbackground: #d4d4d4;
 }
 
 
@@ -31,8 +33,13 @@
 
 h1 {
 	/* position: none; */
-	margin: 0;
-	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
 
 div {
@@ -84,9 +91,8 @@ body {
 }
 
 @media only screen and (min-width: 1025px) {
-	body {background-image: url(../images/background.png);}
+	body {background-image: var(--background-image);}
 }
-
 /* MAIN */
 main {
 	padding-left: 2%;
@@ -125,8 +131,12 @@ main section:not(:first-of-type) ul li {
 	text-align: center;
 }
 
+main section:not(:first-of-type) ul li:hover {
+	border-color: var(--border-hover);
+}
+
 main section:not(:first-of-type) ul li a {
-	color: var(--nedgame-blue);
+	color: var(--link-color);
 	font-weight: bold;
 	order: 0;
 }
@@ -137,7 +147,7 @@ main section:not(:first-of-type):not(:nth-of-type(2)) ul li a:first-of-type {
 }
 
 main section:not(:first-of-type) ul li p {
-	color: black;
+	color: var(--color-text);
 	font-weight: 700;
 	font-size: 16px;
 }

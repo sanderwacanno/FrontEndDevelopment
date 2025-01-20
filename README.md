@@ -260,5 +260,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.w3schools.com/tags/tag_select.asp
   5. bron 5 (Hamburger menu)
   Sanne's hamburger menu opdracht
+  6. bron 6 (Hide content)
+  https://www.a11yproject.com/posts/how-to-hide-content/
+  7. bron 7 (Toggle)
+  https://www.youtube.com/watch?v=69YYgr_X5Nk
 
 </details>
