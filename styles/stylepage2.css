@@ -90,43 +90,50 @@ main > section > section > section:first-of-type section:nth-of-type(2) {
 main > section > section > ul:first-of-type > li {
 	border: solid 0.5px;
 	border-radius: 5px;
-	padding: 0.5em 1em 0.5em 1em;
+	padding: 0.5em 1em;
 	border-color: var(--border-unhover);
 	width: 230px;
 	text-align: center;
 	display: inline-block;
-
-	a:first-of-type{
-		font-weight: bold;
-		/* order: 1; */
-	}
-	a:nth-of-type(2) {
-		order: 0
-	}
-	a:nth-of-type(3) {
-		display: block;
-		text-align: left;
-		font-size: 0.75em;
-	}
-	div {
-		display: flex;
-		justify-content: space-between;
-		font-weight: bold;
-	}
-	ul{
-		display: block;
-		text-align: left;
-	}
-	li {
-		display: block;
-		text-align: left;
-		font-size: 0.75em;
-		svg {
-			height: 1em;
-			fill: var(--nedgame-green);
-		}
-	}
 }
+
+main > section > section > ul:first-of-type > li a:first-of-type {
+	font-weight: bold;
+	/* order: 1; */
+}
+
+main > section > section > ul:first-of-type > li a:nth-of-type(2) {
+	order: 0;
+}
+
+main > section > section > ul:first-of-type > li a:nth-of-type(3) {
+	display: block;
+	text-align: left;
+	font-size: 0.75em;
+}
+
+main > section > section > ul:first-of-type > li div {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+}
+
+main > section > section > ul:first-of-type > li ul {
+	display: block;
+	text-align: left;
+}
+
+main > section > section > ul:first-of-type > li li {
+	display: block;
+	text-align: left;
+	font-size: 0.75em;
+}
+
+main > section > section > ul:first-of-type > li li svg {
+	height: 1em;
+	fill: var(--nedgame-green);
+}
+
 
 main > section > section > ul:nth-of-type(2) {
 	padding-left: 0;
@@ -142,43 +149,54 @@ main > section > section > ul:nth-of-type(2) > li {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	section:nth-of-type(1){
-		order: 1;
-		display: flex;
-		flex-direction: column;
-		gap: 0em;
-		span{
-			color: var(--color-text)
-		}
-		> a:first-of-type{
-			color: var(--color-text);
-			font-weight: bold;
-			font-size: 1.5em;
-		}
-		p {
-			margin: 0;
-		}
-	}
-	section:nth-of-type(2){
-		order: 0;
-	}
-	section:nth-of-type(3){
-		order: 1;
-		div {
-			display: flex;
-			justify-content: space-around;
-			font-weight: bold;
-		}
-		li {
-			display: block;
-			text-align: left;
-			font-size: 0.75em;
-			svg {
-				height: 1em;
-				fill: var(--nedgame-green);
-			}
-		}
-	}
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(1) {
+	order: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 0em;
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(1) span {
+	color: var(--color-text);
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(1) > a:first-of-type {
+	color: var(--color-text);
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(1) p {
+	margin: 0;
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(2) {
+	order: 0;
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(3) {
+	order: 1;
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(3) div {
+	display: flex;
+	justify-content: space-around;
+	font-weight: bold;
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(3) li {
+	display: block;
+	text-align: left;
+	font-size: 0.75em;
+}
+
+main > section > section > ul:nth-of-type(2) > li section:nth-of-type(3) li svg {
+	height: 1em;
+	fill: var(--nedgame-green);
 }
 
 
@@ -203,14 +221,18 @@ main > section > section > ul:nth-of-type(2) {
 main > section > section > section > section:nth-of-type(2) > button svg:nth-of-type(1) {
 	height: 1.5em;
 	width: 1.5em;
+	fill: var(--border-hover);
 	display: block;
 	visibility: visible;
+	z-index: 1;
 }
 
 main > section > section > section > section:nth-of-type(2) > button svg:nth-of-type(2) {
 	height: 1.5em;
 	width: 1.5em;
+	fill: var(--border-hover);
 	display: none;
 	visibility: hidden;
+	z-index: 1;
 }
 	

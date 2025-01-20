@@ -1,11 +1,8 @@
 // JavaScript Document
 console.log("hi");
 
-// function darkMode(){
-//     var element = document.body;
-//     element.classList.toggle("dark-mode");
-// }
 
+// Hamburger menu
 const menuButton = document.querySelector("header > section > section > button:first-of-type")
 
 menuButton.onclick = toonMenu
@@ -24,10 +21,12 @@ function sluitMenu (){
     nav.classList.remove("toonMenu")
 }
 
+// Nacht modus
 let isNachtModusAan = false;
 
 function toggleNachtModus() {
     if (isNachtModusAan) {
+        document.documentElement.style.setProperty("--nedgame-blue", "#003552")
         document.documentElement.style.setProperty("--color-background", "#151515")
         document.documentElement.style.setProperty("--color-text", "#EAEAEA")
         document.documentElement.style.setProperty("--scroll-bar", "#818181")
@@ -40,6 +39,7 @@ function toggleNachtModus() {
         isNachtModusAan = false;
     }
     else {
+        document.documentElement.style.setProperty("--nedgame-blue", "#00669B")
         document.documentElement.style.setProperty("--color-background", "#ffffff")
         document.documentElement.style.setProperty("--color-text", "#333")
         document.documentElement.style.setProperty("--scroll-bar", "#ffffff")
@@ -53,74 +53,45 @@ function toggleNachtModus() {
     }
 }
 
-// let favoriteState = false
+// Favorieten toevoegen
+const heartButton = document.querySelector('main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:first-of-type')
+const heartSVG = document.querySelector('main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:first-of-type > svg')
 
-// const favorite = document.getElementById("heart")
-
-// favorite.onclick = () => {
-//     favoriteState = !favoriteState
-//     console.log(favoriteState)
-//     updateFavorite()
-// }
-
-// const updateFavorite = () => {
-//     if (favoriteState == true) {
-//         heart.style.backgroundColor = "#333"
-//     }
-//     else {
-//         heart.style.backgroundColor = "green"
-//     }
-// }
-
-var heartButtonClick = document.querySelector("button[aria-label='Favoriet item button']")
-
-heartButtonClick.onclick = favorite;
-
-function favorite() {
-    heart.style.backgroundColor = "#333"
-    heartButtonClick.classList.toggle()
+heartButton.onclick = () => {
+    // heartState = !heartState
+    // console.log(heartState)
+    updateHeart()
 }
 
-let listState = false
-
-const listToggle = document.querySelector('main > section > section > section > section:nth-of-type(2) > button')
-
-const merchList1 = document.querySelector('main > section > section > ul:first-of-type')
-const merchList2 = document.querySelector('main > section > section > ul:nth-of-type(2)')
-const merchList1Button = document.querySelector('main > section > section > section > section:nth-of-type(2) > button > svg:nth-of-type(1)')
-const merchList2Button = document.querySelector('main > section > section > section > section:nth-of-type(2) > button > svg:nth-of-type(2)')
-
-listToggle.onclick = () => {
-    listState = !listState
-    console.log(listState)
-    updateList()
-}
-
-const updateList = () => {
-    if (listState == true) {
-        merchList1.style.visibility = "hidden"
-        merchList2.style.visibility = "visible"
-
-        merchList1.style.display = "none"
-        merchList2.style.display = "block"
-
-        merchList1Button.style.visibility = "hidden"
-        merchList2Button.style.visibility = "visible"
-
-        merchList1Button.style.display = "none"
-        merchList2Button.style.display = "block"
+const updateHeart = () => {
+    if(heartSVG.classList.contains('favorited')){
+        heartSVG.classList.remove('favorited')
+        heartSVG.classList.add('unfavorited')
     }
     else {
-        merchList1.style.visibility = "visible"
-        merchList2.style.visibility = "hidden"
+        heartSVG.classList.add('favorited')
+        heartSVG.classList.remove('unfavorited')
+    }
+}
 
-        merchList1.style.display = "grid"
-        merchList2.style.display = "none"
+const plusButton = document.querySelector('main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:nth-of-type(2)')
+const plusSVG = document.querySelector('main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:nth-of-type(2) > svg')
 
-        merchList1Button.style.visibility = "visible"
-        merchList2Button.style.visibility = "hidden"
+plusButton.onclick = console.log("hi")
 
-        merchList1Button.style.display = "block"
-        merchList2Button.style.display = "none"
+plusButton.onclick = () => {
+    // heartState = !heartState
+    // console.log(heartState)
+    updatePlus()
+}
+
+const updatePlus = () => {
+    if(plusSVG.classList.contains('inwinkelmand')){
+        plusSVG.classList.remove('inwinkelmand')
+        plusSVG.classList.add('uitwinkelmand')
+    }
+    else {
+        plusSVG.classList.add('inwinkelmand')
+        plusSVG.classList.remove('uitwinkelmand')
     }
 }

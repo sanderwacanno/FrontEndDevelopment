@@ -111,12 +111,12 @@ main section:first-of-type ul li {
 	border: solid 0.5px;
 	padding: 0.5em 1em 0.5em 1em;
 	border-color: var(--border-unhover);
-	a {
-		text-wrap: nowrap;
-		color: var(--color-text);
-	}
 }
 
+main section:first-of-type ul li a {
+	text-wrap: nowrap;
+	color: var(--color-text);
+}
 main section:first-of-type ul li:hover {
 	border-color: var(--border-hover);
 }
@@ -160,9 +160,10 @@ main section:nth-of-type(2) ul{
 
 main section:nth-of-type(2) ul li{
 	flex-direction: column-reverse;
-	img {
-		height: 100%;
-	}
+}
+
+main section:nth-of-type(2) ul li img {
+	height: 100%;
 }
 
 /* Games 1 */
@@ -175,28 +176,32 @@ main section:nth-of-type(3) ul li{
 	display: inline-block;
 }
 
-main section:nth-of-type(3) section:first-of-type{
+main section:nth-of-type(3) section:first-of-type {
 	display: flex;
 	clear: both;
 	width: 100%;
 	align-items: baseline;
 	padding: 23.35px;
-	h2 {
-		flex-grow: 5;
-		font-weight: 700;
-	}
-	h3 {
-		margin-right: 0.5em;
-	}
-	/* span {
-		display: inline-block
-	} */
-	 /* img {
-		max-width: 100%;
-		max-height: 100%;
-		display: block;
-	 } */
 }
+
+main section:nth-of-type(3) section:first-of-type h2 {
+	flex-grow: 5;
+	font-weight: 700;
+}
+
+main section:nth-of-type(3) section:first-of-type h3 {
+	margin-right: 0.5em;
+}
+
+/* main section:nth-of-type(3) section:first-of-type span {
+	display: inline-block;
+} */
+
+/* main section:nth-of-type(3) section:first-of-type img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+} */
 
 /* Games 2 */
 main section:nth-of-type(4) ul{
@@ -208,19 +213,21 @@ main section:nth-of-type(4) ul li{
 	display: inline-block;
 }
 
-main section:nth-of-type(4) section:first-of-type{
+main section:nth-of-type(4) section:first-of-type {
 	display: flex;
 	clear: both;
 	width: 100%;
 	align-items: baseline;
 	padding: 23.35px;
-	h2 {
-		flex-grow: 5;
-		font-weight: 700;
-	}
-	h3 {
-		margin-right: 0.5em;
-	}
+}
+
+main section:nth-of-type(4) section:first-of-type h2 {
+	flex-grow: 5;
+	font-weight: 700;
+}
+
+main section:nth-of-type(4) section:first-of-type h3 {
+	margin-right: 0.5em;
 }
 
 /* Games 3 */
@@ -233,20 +240,23 @@ main section:nth-of-type(5) ul li{
 	display: inline-block;
 }
 
-main section:nth-of-type(5) section:first-of-type{
+main section:nth-of-type(5) section:first-of-type {
 	display: flex;
 	clear: both;
 	width: 100%;
 	align-items: baseline;
 	padding: 23.35px;
-	h2 {
-		flex-grow: 5;
-		font-weight: 700;
-	}
-	h3 {
-		margin-right: 0.5em;
-	}
 }
+
+main section:nth-of-type(5) section:first-of-type h2 {
+	flex-grow: 5;
+	font-weight: 700;
+}
+
+main section:nth-of-type(5) section:first-of-type h3 {
+	margin-right: 0.5em;
+}
+
 
 /* Games 4 */
 main section:nth-of-type(6) ul{
@@ -258,20 +268,23 @@ main section:nth-of-type(6) ul li{
 	display: inline-block;
 }
 
-main section:nth-of-type(6) section:first-of-type{
+main section:nth-of-type(6) section:first-of-type {
 	display: flex;
 	clear: both;
 	width: 100%;
 	align-items: baseline;
 	padding: 23.35px;
-	h2 {
-		flex-grow: 5;
-		font-weight: 700;
-	}
-	h3 {
-		margin-right: 0.5em;
-	}
 }
+
+main section:nth-of-type(6) section:first-of-type h2 {
+	flex-grow: 5;
+	font-weight: 700;
+}
+
+main section:nth-of-type(6) section:first-of-type h3 {
+	margin-right: 0.5em;
+}
+
 
 @media only screen and (min-width: 1025px) {
 	main section:nth-of-type(2) ul{

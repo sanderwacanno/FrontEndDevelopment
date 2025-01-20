@@ -30,6 +30,8 @@
 	--header-button: #000000;
 	--form-background: #d3d4d6;
 	--link-color: #00669B;
+	--heart-hover: #99cde9;
+	--plus-white: #FFFFFF;
 
 	--background-image: url(../images/background.png);
 }
@@ -89,6 +91,7 @@ body a:visited {
 
 header > section:nth-of-type(1) {
 	background-color: var(--color-background);
+	z-index: 2;
 }
 
 main {
@@ -149,26 +152,29 @@ header section section section button svg {
 main button {
 	border-radius: 25px;
 	text-align: center;
-	svg {
-		height: 1em;
-		width: auto;
-		position: relative;
-		top: 5%;
-	}
+}
+
+main button svg {
+	height: 1em;
+	width: auto;
+	position: relative;
+	top: 5%;
 }
 
 main li button:nth-of-type(1) {
 	background-color: var(--gray-button);
-	svg {
-		fill: var(--nedgame-blue);
-	}
+}
+
+main li button:nth-of-type(1) svg {
+	fill: var(--nedgame-blue);
 }
 
 main li button:nth-of-type(2) {
 	background-color: var(--nedgame-green);
-	svg {
-		fill: white;
-	}
+}
+
+main li button:nth-of-type(2) svg {
+	fill: var(--plus-white);
 }
 
 
@@ -195,10 +201,11 @@ header > section:nth-of-type(1) > p {
 	visibility: hidden;
 	font-size: 12px;
 	text-align: center;
-	svg {
-		height: 1em;
-		width: auto;
-	}
+}
+
+header > section:nth-of-type(1) > p svg {
+	height: 1em;
+	width: auto;
 }
 
 header > img {
@@ -257,9 +264,9 @@ header > section:nth-of-type(1) > ul > li {
 	}
 }
 
-header {
+/* header {
 	position: block;
-}
+} */
 
 header > section:nth-of-type(1) {
 	display: block;
@@ -310,9 +317,9 @@ body > header > section:nth-of-type(1) > section:nth-of-type(3){
 		visibility: visible; 
 		overflow-y: auto;
 		margin-top: 10px;
-		a {
-			margin-right: 9px;
-		}
+	}
+	body > header > section:nth-of-type(1) > section:nth-of-type(3) a {
+		margin-right: 9px;
 	}
 }
 
@@ -364,7 +371,7 @@ header > img {
 		visibility: visible; 
 		max-width: 100%;
 		height: auto; 
-		background-color: none; 
+		/* background-color: none;  */
 		justify-content: center;
 	}
 }
@@ -377,7 +384,7 @@ header > img {
 
 
 footer > img:nth-child(1){
-	position: none;
+	display: none;
 	visibility: hidden;
 }
 
@@ -458,12 +465,13 @@ footer > section {
 header > section > nav:first-of-type {
 	position: fixed;
 	inset: 0;
-	translate:-100%;
+	transform: translateX(-100%);
 	transition: 0.3s;
+	z-index: 2;
 }
 
 header > section > nav:first-of-type.toonMenu {
-	translate:0%;
+	transform: translateX(0%);
 }
 
 header > section > section > button:first-of-type {
@@ -519,7 +527,6 @@ nav:first-of-type {
 	width: 100%;
 	height: 100%;
 	background-color: var(--color-background);
-	position: none;
 	visibility: hidden;
 	top: 0em;
 }
@@ -564,10 +571,11 @@ nav:first-of-type section {
 header > section > section:nth-of-type(2) {
 	display: none;
 	visibility: hidden;
-	img {
-		width: 211px;
-		height: 43px;
-	}
+}
+
+header > section > section:nth-of-type(2) img {
+	width: 211px;
+	height: 43px;
 }
 
 @media only screen and (min-width: 1025px){
@@ -578,18 +586,20 @@ header > section > section:nth-of-type(2) {
 		align-items: center;
 		padding-top: 0.75em;
 		padding-bottom: 0.75em;
-		img {
-			display: block;
-		}
 	}
+	header > section > section:nth-of-type(2) img {
+		display: block;
+	}
+
 	section button {
 		background-color: var(--color-background);
-		span {
-			display: flex;
-			color: var(--border-hover);
-			/* font-weight: 100; */
-			font-size: 0.75em;
-		}
+	}
+
+	section button span {
+		display: flex;
+		color: var(--border-hover);
+		/* font-weight: 100; */
+		font-size: 0.75em;
 	}
 
 	section button p {
@@ -601,33 +611,38 @@ header > section > section:nth-of-type(2) {
 
 form {
 	display: flex;
-
-	label {
-		height: 36px;
-	}
-	select {
-		height: 36px;
-		background-color: var(--form-background);
-	}
-	input  {
-		height: 36px;
-		width: calc(100% - 77px - 43px);
-
-	}
-	button {
-		background-color: var(--nedgame-blue);
-		fill: var(--gray-button);
-		height: 36px;
-		width: 36px;
-		svg {
-			height: 1.5em;
-			fill: var(--gray-button);
-		}
-	}
-	option {
-		text-align: center;
-	}
 }
+
+form label {
+	height: 36px;
+}
+
+form select {
+	height: 36px;
+	background-color: var(--form-background);
+}
+
+form input {
+	height: 36px;
+	width: calc(100% - 77px - 43px);
+}
+
+form button {
+	background-color: var(--nedgame-blue);
+	fill: var(--gray-button);
+	height: 36px;
+	width: 36px;
+}
+
+form button svg {
+	height: 1.5em;
+	fill: var(--gray-button);
+}
+
+form option {
+	text-align: center;
+}
+
 
 body > header > form {
 	display: block;
@@ -647,4 +662,85 @@ header section section:first-of-type section button {
 	padding: 0;
 	gap: 3em;
 	background-color: var(--color-background);
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:first-of-type svg.favorited {
+	animation: favorite 0.4s forwards;
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:first-of-type svg.unfavorited {
+	animation: unfavorite 0.4s forwards;
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:first-of-type svg:hover {
+	fill: var(--heart-hover)
+}
+
+@keyframes favorite {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+		fill: var(--nedgame-red);
+	}
+	100% {
+		transform: scale(1);
+		fill: var(--nedgame-red);
+	}
+}
+
+@keyframes unfavorite {
+	0% {
+		transform: scale(1);
+		fill: var(--nedgame-red);
+	}
+	50% {
+		transform: scale(1.5);
+		fill: var(--nedgame-red);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:nth-of-type(2) svg.inwinkelmand {
+	animation: toevoegen 0.4s forwards;
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:nth-of-type(2) svg.uitwinkelmand {
+	animation: uithalen 0.4s forwards;
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li:first-of-type > button:nth-of-type(2) svg:hover {
+	fill: var(--heart-hover)
+}
+
+@keyframes toevoegen {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5) rotate(180deg);
+		fill: var(--nedgame-blue);
+	}
+	100% {
+		transform: scale(1) rotate(360deg);
+		fill: var(--nedgame-blue);
+	}
+}
+
+@keyframes uithalen {
+	0% {
+		transform: scale(1);
+		fill: var(--nedgame-blue);
+	}
+	50% {
+		transform: scale(1.5) rotate(-180deg);
+		fill: var(--nedgame-blue);
+	}
+	100% {
+		transform: scale(1) rotate(-360deg);
+	}
 }
