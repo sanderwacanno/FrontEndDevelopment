@@ -238,6 +238,39 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
+## Herkansing eindgesprek (week ?)
+
+<details>
+  <summary>uitwerken voor eindgesprek</summary>
+
+  ### Je uitkomst - karakteristiek screenshots:
+  <img src="readme-images/index.html.png" width="375px" alt="uitomst opdracht 1 1/4">
+  <img src="readme-images/index.mobile.png" width="375px" alt="uitomst opdracht 1 2/4">
+  <img src="readme-images/merch.html.png" width="375px" alt="uitomst opdracht 1 3/4">
+  <img src="readme-images/merch.mobile.png" width="375px" alt="uitomst opdracht 1 4/4">
+    
+
+
+  ### Dit ging goed/Heb ik geleerd: 
+  Ik ben al reuze blij dat de functionaliteiten goed gingen
+  Zoals night mode
+  <img src="readme-images/blij1.png" width="375px" alt="top">
+  Favoriet animatie
+  <img src="readme-images/blij2.png" width="375px" alt="top">
+  Lijst toggle
+  <img src="readme-images/blij3.png" width="375px" alt="top">
+  En al de hamburger menu
+  <img src="readme-images/blij4.png" width="375px" alt="top">
+
+
+  ### Dit was lastig/Is niet gelukt:
+  Grids vond ik nog lastig, zoals om deze in een presentabelere positie te hebben. Die op de site zijn nu misschien een beetje te uit elkaar. En het feit dat ik geen twee items naast elkaar had kunnen doen op de mobiele merch page.
+  Ook betreur ik dat ik niet de banners op de main pagina goed kon krijgen net zoals in de orginele.
+
+  <img src="readme-images/grids.png" width="375px" alt="bummer">
+</details>
+
+
 
 
 
